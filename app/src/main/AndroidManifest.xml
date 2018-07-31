@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nimako">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/roundnimakoicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Register"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Wishlist_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"/>
+
+
+
+        <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false"/>
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity"/>
+
+        <activity android:name="io.card.payment.DataEntryActivity"/>
+
+
+
+
+
+
+
+
+        <activity
+            android:name=".Navigation"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".EkActivity" />
+
+        <activity
+            android:name=".SubCategory"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ItemList"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ItemListOffer"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Item_Main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Cart_main"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".MyAddressincart"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ShippingOption"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity android:name=".Add_address_my_add"
+            android:windowSoftInputMode="stateHidden"
+            ></activity>
+<activity android:name=".Update_address_my_add"
+    android:windowSoftInputMode="stateHidden"
+    ></activity>
+        <activity
+            android:name=".YourAc"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Order_main"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".CustomerService"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+<activity android:name=".MyAddress"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".MyPersonalInfo"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".PaymentStep"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Codpayment"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ConformOrder"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Update_profile"
+            android:windowSoftInputMode="stateHidden" />
+    </application>
+
+</manifest>

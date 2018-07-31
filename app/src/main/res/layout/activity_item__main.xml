@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nimako.Item_Main">
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider_item"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+      android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+
+        />
+    <com.daimajia.slider.library.Indicators.PagerIndicator
+        android:id="@+id/banner_slider_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:selected_color="@color/colorPrimary"
+        app:unselected_color="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        style="@style/AndroidImageSlider_Indicator" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Revolving Chair"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="₹599"
+        android:paddingLeft="15dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="₹1199"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="(50% off)"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_green_dark"
+            />
+</LinearLayout>
+
+</LinearLayout>

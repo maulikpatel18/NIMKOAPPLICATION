@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Cart_main">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <TextView
+        android:id="@+id/itemcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/totallabl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="180dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="Total:"/>
+
+    <TextView
+        android:id="@+id/uppertotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"/>
+    </LinearLayout>
+    <include layout="@layout/cart_card_content"
+       />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="15dp"
+    android:textColor="@android:color/darker_gray"
+    android:layout_marginTop="20dp"
+    android:id="@+id/pricedtelbl"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:text="Price details:"/>
+    <include layout="@layout/activity_carttotal"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

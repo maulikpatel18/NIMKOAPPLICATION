@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nimako.YourAc"
+    tools:showIn="@layout/app_bar_my_per_info"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@mipmap/logo"
+                android:background="#fff"/>
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:textSize="30sp"
+                android:text="My Profile"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:elevation="2dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:clickable="true"
+                card_view:cardCornerRadius="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Firstname"
+                            android:layout_marginTop="5dp"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@android:color/darker_gray"/>
+
+
+                    <TextView
+                        android:id="@+id/fnameprofile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text=""
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        style="?android:attr/listSeparatorTextViewStyle"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lastname"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@android:color/darker_gray"/>
+
+
+                    <TextView
+                        android:id="@+id/lnameprofile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text=""
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        style="?android:attr/listSeparatorTextViewStyle"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@android:color/darker_gray"/>
+
+
+                    <TextView
+                        android:id="@+id/emailprofile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text=""
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        style="?android:attr/listSeparatorTextViewStyle"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Birthdate"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@android:color/darker_gray"/>
+
+
+                    <TextView
+                        android:id="@+id/Bdateprofile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text=""
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        style="?android:attr/listSeparatorTextViewStyle"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@android:color/darker_gray"/>
+
+
+                    <TextView
+                        android:id="@+id/genprofile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text=""
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        style="?android:attr/listSeparatorTextViewStyle"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+
+                </LinearLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+            <Button
+                android:id="@+id/btnsettingprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/buttonbg"
+                android:backgroundTint="#fff"
+                android:textColorHint="@color/colorPrimary"
+                android:text="Change Setting"
+                android:singleLine="true"
+                android:layout_marginBottom="30dp"
+                android:drawablePadding="10dp"
+                android:textSize="20dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:drawableLeft="@drawable/setting"
+                android:drawableTint="@color/colorPrimary"
+                android:paddingRight="60dp"
+                android:paddingLeft="60dp"
+                android:textColor="@color/colorPrimary"
+                />
+
+
+
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

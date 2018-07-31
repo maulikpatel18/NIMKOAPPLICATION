@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Cart_main">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@mipmap/logo"
+                android:padding="10dp"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_viewcod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                card_view:cardCornerRadius="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" CASH ON DELIVERY (COD) PAYMENT"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+
+                android:background="@color/colorPrimary" />
+
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="- You have chosen the Cash on Delivery method."
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="15dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/totalincodtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="15dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"/>
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Please confirm your order by clicking 'I confirm my order'.."
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"/>
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I confirm my order"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="#fff"
+                android:layout_marginTop="100dp"
+                android:id="@+id/conformordercod"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableRight="@drawable/rarrow"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:drawableLeft="@drawable/submit"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center"
+                />
+                </LinearLayout>
+    </ScrollView>
+</LinearLayout>
